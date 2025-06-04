@@ -10,7 +10,7 @@ import java.util.NoSuchElementException;
 /**
 * JDBC - DriverManage 사용
 * */
-@Slf4jasdasdddddddasdd
+@Slf4jasdasdddddddasddasdasd
 public class MemberRepositoryV0 {
 
 
