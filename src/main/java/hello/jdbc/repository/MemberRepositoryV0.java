@@ -45,7 +45,7 @@ asdasdasdasdsdasdadasdsadasdasdasad
 
     }
 
-    public Member findById(String memberId) throws SQLException {
+    public Member find12ById(String memberId) throws SQLException {
         String sql = "select * from member where member_id = ?";
 
         Connection con = null;
