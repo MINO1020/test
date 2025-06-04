@@ -38,7 +38,7 @@ asdasdasdasdsdasdadasdsadasdasdasad
             return member;sd
         } catch (SQLException e) {asd
             log.error("db error", e);
-            throw e;
+            throw e;asd
         } finally {
             close(con, pstmt, null);
         }
