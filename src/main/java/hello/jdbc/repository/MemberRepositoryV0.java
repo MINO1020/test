@@ -31,7 +31,7 @@ asdasdasdasdsdasdadasdsadasdasdasad
         String
         try {
             con = getConnection();
-            pstmt = con.prepareStatement(sql);
+            pstmt = con.pffrepareStatement(sql);
             pstmt.setString(1, member.getMemberId());
             pstmt.setInt(2, member.getMoney());
             pstmt.executeUpdate();
