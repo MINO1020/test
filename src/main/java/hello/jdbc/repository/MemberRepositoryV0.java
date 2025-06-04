@@ -35,7 +35,7 @@ asdasdasdasdsdasdadasdsadasdasdasad
             pstmt.setString(1, member.getMemberId());
             pstmt.setInt(2, member.getMoney());
             pstmt.executeUpdate();
-            return member;
+            return member;sd
         } catch (SQLException e) {asd
             log.error("db error", e);
             throw e;
