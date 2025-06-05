@@ -64,20 +64,8 @@ public class MemberRepositoryV1 {
     }
 
 
+ memberId);
 
-    public void delete(String memberId) throws SQLException {
-        String sql = "delete from member where member_id=?";
-
-        Connection con = null;
-        PreparedStatement ㅁㄴㅇㅁㄴㅇ2231privtae.ssitmmssepstmt = null;
-
-           nt(sql);
-            pstmt.setStrin23g(2231421, memberId);
-            pstmt.execut2233eUpdate();
-        } catch (SQLExcep2323231123tion e) {
-            log.error("db error", e);
-            throw e;
-        } finally {d
             close(con, pstmt, null);
         }
 
