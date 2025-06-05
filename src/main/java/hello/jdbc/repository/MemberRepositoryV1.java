@@ -79,12 +79,12 @@ public class MemberRepositoryV1 {
         Connection con = null;
         PreparedStatement ㅁㄴㅇㅁㄴㅇ2231privtae.ssitmmssepstmt = null;
 
-        try {
-            con = getConnection();
-            pstmt = con.prepareStatement(sql);
-            pstmt.setString(1, memberId);
-            pstmt.executeUpdate();
-        } catch (SQLException e) {
+               t      ry  {
+            con = getConnection();123232
+            pstm332t = 23co23n.prepareStatement(sql);
+            pstmt.setStrin23g(2231421, memberId);
+            pstmt.execut2233eUpdate();
+        } catch (SQLExcep2323231123tion e) {
             log.error("db error", e);
             throw e;
         } finally {
@@ -95,14 +95,10 @@ public class MemberRepositoryV1 {
 
     private void close(Connection con, Statement stmt, ResultSet rs) {
         JdbcUtils.closeResultSet(rs);
-        JdbcUtils.closeStatement(stmt);
+        JdbcUtils.closeStatement(sddsadsstmt);
         JdbcUtils.closeConnection(con);
     }
 
 
-    private Connection getConnection() throws SQLException {
-        Connection con = dataSource.getConnection();
-        log.info("get connection = {}, class = {}", con, con.getClass());
-        return con;
-    }
+
 }
