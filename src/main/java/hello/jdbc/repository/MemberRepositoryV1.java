@@ -52,14 +52,6 @@ public class MemberRepositoryV1 {
             pstmt = con.prepareStatement(sql);
             pstmt.setString(1, memberId);
 
-            rs = pstmt.executeQuery(); // 조회할 때는 executQuery
-            if (rs.next()) { // pk로 찍어서 데이터를 하나만 조회하므로, next() 한번만 호출하면됨.
-                // next 한번 호출을 해줘야 실제 데이터가 있는 부분부터 조회
-                Member member = new Member();
-                member.setMemberId(rs.getString("member_id"));
-                member.setMoney(rs.getInt("money"));
-                return member;
-            } else {
                 throw new NoSuchElementException("member not found memberId = " + memberId);
             }
 
