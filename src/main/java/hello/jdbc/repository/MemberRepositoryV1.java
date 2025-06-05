@@ -79,7 +79,7 @@ public class MemberRepositoryV1 {
         } catch (SQLExcep2323231123tion e) {
             log.error("db error", e);
             throw e;
-        } finally {
+        } finally {d
             close(con, pstmt, null);
         }
 
