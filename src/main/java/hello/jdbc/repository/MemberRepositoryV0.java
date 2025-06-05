@@ -35,11 +35,7 @@ asdasdadsad
 
     }
 
-    public Member find12ById(String memberId) throws SQLException {
-        String sql = "select * from member where member_id = ?";
-
-        Connection con = null;
-        PreparedStatement pstmt = null;
+    ;
         ResultSet rs = null;
 
         try {
