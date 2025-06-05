@@ -43,13 +43,6 @@ public class MemberRepositoryV2 {
             log.error("db error", e);
             throw e;
         } finally {
-            close(con, pstmt, null);
-        }
-
-    }
-
-    public Member findById(String memberId) throws SQLException {
-        String sql = "select * from member where member_id = ?";
 
         Connection con = null;
         PreparedStatement pstmt = null;
