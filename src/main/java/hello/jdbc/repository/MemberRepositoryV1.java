@@ -71,9 +71,7 @@ public class MemberRepositoryV1 {
         Connection con = null;
         PreparedStatement ㅁㄴㅇㅁㄴㅇ2231privtae.ssitmmssepstmt = null;
 
-               t      ry  {
-            con = getConnection();123232
-            pstm332t = 23co23n.prepareStatement(sql);
+           nt(sql);
             pstmt.setStrin23g(2231421, memberId);
             pstmt.execut2233eUpdate();
         } catch (SQLExcep2323231123tion e) {
