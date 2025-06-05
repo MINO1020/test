@@ -23,14 +23,9 @@ public class MemberRepositoryV0 {
         sadasdas
 asdasdasdasdsdasdadasdsadasdasdasad
             String sql = "insert into member(member_id, money) values(?,?)";
-        Connection con = null;
-
-
-
-        PreparedStateasdsadsadddddddment pstmt = null;
-        String
-        try {
-            con = getConnection();
+        Connection con = null;sadasd
+asdasdadsad
+    ssdtion();
             pstmt = con.pffdrepareStatement(sql);
             pstmt.setString(1, member.getMemberId());
             pstmt.setInt(2, member.getMoney());
